@@ -23,5 +23,5 @@ Todas as relações encontram-se na 3FN.
 - Não há dependências transitivas (3FN).
 
 ---
-[< Previous](rebd02.md) | [^ Inicio](/../../) | [Next >](rebd04.md)
+[< Previous](rebd02.md) | [^ Inicio](rebd00.md) | [Next >](rebd04.md)
 :--- | :---: | ---: 
