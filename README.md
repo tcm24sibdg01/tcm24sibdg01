@@ -1,6 +1,8 @@
 # Loja de Guitarras
 
-Repositório para hospedar o projeto desenvolvido para a disciplina "SIBD", do segundo ano do curso TCM, UMAIA. Desenvolvido pelo Grupo 1: @JorgeConceicao-umaia, @fmsj0 .
+Repositório para hospedar o projeto desenvolvido para a disciplina "SIBD", do segundo ano do curso TCM, UMAIA. Desenvolvido pelo Grupo 1:
+[@JorgeConceicao](https://github.com/JorgeConceicao-umaia)
+[@FranciscoDias](https://github.com/fmsj0)
 
 ## Descrição do Tema
 
