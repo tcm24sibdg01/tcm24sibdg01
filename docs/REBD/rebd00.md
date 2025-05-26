@@ -14,5 +14,5 @@
 * Francisco Maria Sequeira Dias [@FranciscoDias](https://github.com/fmsj0)
 
 ---
-< Previous | [^ Main](/../../) | [Next >](rebd01.md)
-:--- | :---: | ---: 
+| [^ Main](/../../) | [Next >](rebd01.md)
+| :---: | ---: 
