@@ -217,6 +217,7 @@ CREATE VIEW vw_stock_baixo AS
 SELECT modelo, quantidade
 FROM STOCK
 WHERE quantidade < 5;
+```
 
 [< Previous](rebd03.md) | [^ Inicio](/../../) | [Next >](rebd05.md)
 :--- | :---: | ---: 
