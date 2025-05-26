@@ -76,5 +76,5 @@
 
 
 ---
-[< Previous](rebd01.md) | [^ Inicio](/../../) | [Next >](rebd03.md)
+[< Previous](rebd01.md) | [^ Inicio](rebd00.md) | [Next >](rebd03.md)
 :--- | :---: | ---: 
