@@ -26,5 +26,5 @@
 - Vendas não são eliminadas, apenas canceladas.
 - Stock não pode ser negativo.
 
-| [< Previous](rei02.md) | [^ Inicio](../../README.md)
+| [< Previous](rei02.md) | [^ Inicio](rei00.md)
 |:----------------------------------:|:----------------------------------:|
