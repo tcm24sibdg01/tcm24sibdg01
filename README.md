@@ -9,7 +9,7 @@ A loja de guitarras, com o crescimento do negócio e a diversidade de produtos, 
 ## Repository organization
 
 * **Source code** is in the [src folder](src/).
-* Reports are in [doc folder](doc/).
+* Reports are in [docs folder](docs/).
 
 ## Gallery
 
