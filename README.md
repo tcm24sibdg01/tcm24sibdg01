@@ -28,8 +28,8 @@ A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull 
 ## Reports
 _Please add a hyperlink per Report.
 
-:[REI](docs/rei/rei00.md)
-:[REBD](docs/rebd/rebd00.md)
+:[REI](docs/REI/rei00.md)
+:[REBD](docs/REBD/rebd00.md)
 
 ## Team
 * Marco Amaro Oliveira [@MarcoOliveira](https://github.com/marcoamarooliveira)
