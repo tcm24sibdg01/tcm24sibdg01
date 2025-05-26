@@ -7,5 +7,5 @@
 - **Funcionário de Vendas**: Pode registar vendas, consultar stock, adicionar clientes e emitir faturas.
 - **Gestor de Stock**: Atualiza e consulta o inventário.
 
-| [< Previous](rei01.md) | [^ Inicio](../../README.md) | [Next >](rei03.md) |
+| [< Previous](rei01.md) | [^ Inicio](rei00.md) | [Next >](rei03.md) |
 |:----------------------------------:|:----------------------------------:|:----------------------------------:|
