@@ -12,7 +12,7 @@
 - **Jorge Conceição** - [@JorgeConceicao](https://github.com/JorgeConceicao-umaia)
 
 
-[^ Inicio](../../README.md) | [Next >](rei01.md) |
+[^ Inicio](rei00.md) | [Next >](rei01.md) |
 |:----------------------------------:|:----------------------------------:|
 
 
