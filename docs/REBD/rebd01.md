@@ -9,5 +9,5 @@ _(Descrever os tipos de utilizadores (actores) do sistema de informação e as f
 
 
 ---
-[< Previous](rebd00.md) | [^ Main](/../../) | [Next >](rebd02.md)
+[< Previous](rebd00.md) | [^ Inicio](/../../) | [Next >](rebd02.md)
 :--- | :---: | ---: 
