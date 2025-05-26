@@ -15,5 +15,5 @@ O sistema proposto permitirá:
 - Stock é atualizado automaticamente após cada venda;
 - Acesso apenas a funcionários da loja.
 
-| [< Previous](rei00.md) | [^ Inicio](../../README.md) | [Next >](rei02.md) |
+| [< Previous](rei00.md) | [^ Inicio](rei00.md) | [Next >](rei02.md) |
 |:----------------------------------:|:----------------------------------:|:----------------------------------:|
