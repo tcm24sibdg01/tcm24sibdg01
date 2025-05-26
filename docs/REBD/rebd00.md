@@ -8,7 +8,7 @@
 :[Esquema Relacional](rebd04.md)  
 :[SQL](rebd05.md)  
 
-## Groupo 1
+## Grupo 1
 
 * Jorge Daniel Andrade Conceição [@JorgeConceicao](https://github.com/JorgeConceicao-umaia)
 * Francisco Maria Sequeira Dias [@FranciscoDias](https://github.com/fmsj0)
