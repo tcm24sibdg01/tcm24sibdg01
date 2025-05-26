@@ -219,5 +219,5 @@ FROM STOCK
 WHERE quantidade < 5;
 ```
 
-[< Previous](rebd03.md) | [^ Inicio](/../../) | [Next >](rebd05.md)
+[< Previous](rebd03.md) | [^ Inicio](rebd00.md) | [Next >](rebd05.md)
 :--- | :---: | ---: 
