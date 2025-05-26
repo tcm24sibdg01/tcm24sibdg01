@@ -1,8 +1,6 @@
 # Loja de Guitarras
 
-Repositório para hospedar o projeto desenvolvido para a disciplina "SIBD", do segundo ano do curso TCM, UMAIA. Desenvolvido pelo Grupo 1:
-[@JorgeConceicao](https://github.com/JorgeConceicao-umaia)
-[@FranciscoDias](https://github.com/fmsj0)
+Repositório para hospedar o projeto desenvolvido para a disciplina "SIBD", do segundo ano do curso TCM, UMAIA. Desenvolvido pelo Grupo 1: @JorgeConceicao-umaia, @fmsj0 .
 
 ## Descrição do Tema
 
@@ -10,22 +8,20 @@ A loja de guitarras, com o crescimento do negócio e a diversidade de produtos, 
 
 ## Repository organization
 
-* **Source code** is in the [src folder](src/).
+* **Source code**
 * Reports are in [docs folder](docs/).
 
 ## Gallery
 
-A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull to organize the images.
 
 ## Technologies
 
 * Docker
-* NodeJS
+* VS Code
 * MySQL
 
 ### Frameworks and Libraries
 
-* Loopback 4
 
 ## Reports
 
@@ -33,5 +29,5 @@ A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull 
 :[REBD](docs/REBD/rebd00.md)
 
 ## Team
-* Marco Amaro Oliveira [@MarcoOliveira](https://github.com/marcoamarooliveira)
-* Other team members
+* Jorge Conceicao [@JorgeConceicao](https://github.com/JorgeConceicao-umaia)
+* Francisco Dias [@FranciscoDias](https://github.com/fmsj0)
