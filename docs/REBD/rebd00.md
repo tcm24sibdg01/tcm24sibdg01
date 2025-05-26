@@ -10,8 +10,8 @@
 
 ## Groupo 1
 
-* Jorge Daniel Andrade Conceição [@MarcoOliveira](https://github.com/marcoamarooliveira)
-* Other team members
+* Jorge Daniel Andrade Conceição [@JorgeConceicao](https://github.com/JorgeConceicao-umaia)
+* Francisco Maria Sequeira Dias [@FranciscoDias](https://github.com/fmsj0)
 
 ---
 < Previous | [^ Main](/../../) | [Next >](rebd01.md)
