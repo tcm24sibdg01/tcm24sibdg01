@@ -29,5 +29,5 @@ A loja de guitarras, com o crescimento do negócio e a diversidade de produtos, 
 :[REBD](docs/REBD/rebd00.md)
 
 ## Team
-* Jorge Conceicao [@JorgeConceicao](https://github.com/JorgeConceicao-umaia)
+* Jorge Conceição [@JorgeConceicao](https://github.com/JorgeConceicao-umaia)
 * Francisco Dias [@FranciscoDias](https://github.com/fmsj0)
