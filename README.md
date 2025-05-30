@@ -16,7 +16,7 @@ A loja de guitarras, com o crescimento do negócio e a diversidade de produtos, 
 
 ## Technologies
 
-* Docker
+* Node JS
 * VS Code
 * MySQL
 
