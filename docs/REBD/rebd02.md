@@ -44,7 +44,7 @@
 
 ---
 
-## 🔗 Associações
+## Associações
 
 ### **Compra**
 - **Relaciona**: `Cliente (1)` ↔ `Venda (N)`
