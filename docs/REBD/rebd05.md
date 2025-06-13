@@ -3,6 +3,7 @@
 ## DDL
 
 ```sql
+CREATE DATABASE IF NOT EXISTS loja_guitarras;
 USE `loja_guitarras`;
 
 -- Apagar tabelas se existirem
@@ -43,14 +44,14 @@ CREATE TABLE IF NOT EXISTS GUITARRA (
 
 -- Tabela VENDA
 CREATE TABLE IF NOT EXISTS VENDA (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  data DATE NOT NULL DEFAULT CURRENT_DATE,
-  valor DECIMAL(8,2) NOT NULL,
-  metodo_pagamento VARCHAR(30) NOT NULL DEFAULT 'dinheiro',
-  id_cliente BIGINT NOT NULL,
-  id_utilizador BIGINT NOT NULL,
-  FOREIGN KEY (id_cliente) REFERENCES CLIENTE(id),
-  FOREIGN KEY (id_utilizador) REFERENCES UTILIZADOR(id)
+   id BIGINT AUTO_INCREMENT PRIMARY KEY,
+   data DATE NOT NULL DEFAULT (CURRENT_DATE),
+   valor DECIMAL(8,2) NOT NULL,
+   metodo_pagamento VARCHAR(30) NOT NULL DEFAULT 'dinheiro',
+   clienteId BIGINT NOT NULL,
+   utilizadorId BIGINT NOT NULL,
+   FOREIGN KEY (clienteId) REFERENCES CLIENTE(id),
+   FOREIGN KEY (utilizadorId) REFERENCES UTILIZADOR(id)
 );
 
 -- Tabela STOCK
@@ -58,11 +59,11 @@ CREATE TABLE IF NOT EXISTS STOCK (
   id BIGINT AUTO_INCREMENT PRIMARY KEY,
   modelo VARCHAR(50) NOT NULL,
   quantidade INT NOT NULL DEFAULT 0 CHECK (quantidade >= 0),
-  id_utilizador BIGINT NOT NULL,
-  FOREIGN KEY (id_utilizador) REFERENCES UTILIZADOR(id)
+  utilizadorId BIGINT NOT NULL,
+  FOREIGN KEY (utilizadorId) REFERENCES UTILIZADOR(id)
 );
 
--- Tabela VENDA_GUITARRA
+-- Tabela VENDA_GUITARRA (ver isto melhor)
 CREATE TABLE IF NOT EXISTS VENDA_GUITARRA (
   id_venda BIGINT NOT NULL,
   n_serie VARCHAR(30) NOT NULL,
@@ -70,6 +71,35 @@ CREATE TABLE IF NOT EXISTS VENDA_GUITARRA (
   FOREIGN KEY (id_venda) REFERENCES VENDA(id),
   FOREIGN KEY (n_serie) REFERENCES GUITARRA(n_serie)
 );
+
+-- DML
+
+INSERT INTO UTILIZADOR (id, nome, username, tipo_perfil)
+VALUES (1, 'Joana', 'Joana2', 'normal');
+
+INSERT INTO CLIENTE (nome, email, NIF, morada)
+VALUES ('João Costa', 'joao.costa@email.com', '123456789', 'Rua das Guitarras, Porto');
+
+INSERT INTO GUITARRA (n_serie, modelo, tipo, cor, acabamento, ano, preco)
+VALUES ('SN12345678', 'Stratocaster', 'solid', 'sunburst', 'brilhante', 2022, 999.99);
+
+INSERT INTO STOCK (modelo, quantidade, utilizadorId)
+VALUES ('Stratocaster', 5, 1);
+
+INSERT INTO VENDA (valor, metodo_pagamento, clienteId, utilizadorId)
+VALUES (999.99, 'MBWay', 1, 1);
+
+INSERT INTO VENDA_GUITARRA (id_venda, n_serie)
+VALUES (1, 'SN12345678');
+
+SELECT modelo, quantidade
+FROM STOCK
+WHERE quantidade < 5;
+
+SELECT u.nome, SUM(v.valor) AS total_vendas
+FROM UTILIZADOR u
+JOIN VENDA v ON u.id = v.utilizadorId
+GROUP BY u.id;
 ```
 
 ## DML
