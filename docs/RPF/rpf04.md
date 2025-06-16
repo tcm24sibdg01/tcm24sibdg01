@@ -90,7 +90,7 @@ Funcionários ou responsáveis que interagem com o sistema.
 * **Chave Primária**: `id`
 * **Unicidade**:
 
-  * `username` (username\_uk)
+  * `username` (username_uk)
 
 ---
 
@@ -105,7 +105,7 @@ Registo de uma transação de venda.
 | Nome              | Descrição                 | Domínio      | por Omissão   | Automático | Nulo |
 | ----------------- | ------------------------- | ------------ | ------------- | ---------- | ---- |
 | id                | ID da venda               | BIGINT       | -             | Sim        | Não  |
-| data              | Data da venda             | DATE         | current\_date | Não        | Não  |
+| data              | Data da venda             | DATE         | current_date () | Não        | Não  |
 | valor             | Valor total da venda      | DECIMAL(8,2) | -             | Não        | Não  |
 | metodo\_pagamento | Método de pagamento usado | VARCHAR(30)  | 'dinheiro'    | Não        | Não  |
 | clienteId         | Cliente associado         | BIGINT       | -             | Não        | Não  |
