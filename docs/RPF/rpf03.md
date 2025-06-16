@@ -12,8 +12,6 @@
 
 * STOCK(id PK, modelo, quantidade, utilizadorId FK)
 
----
-
 ## Normalização do Esquema Relacional
 
 Todas as relações apresentadas encontram-se na **Terceira Forma Normal (3FN)**, respeitando os princípios fundamentais de integridade e não redundância.
