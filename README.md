@@ -1,6 +1,6 @@
 # Loja de Guitarras
 
-Repositório para hospedar o projeto desenvolvido para a disciplina "SIBD", do segundo ano do curso TCM, UMAIA. Desenvolvido pelo Grupo 1: [@JorgeConceicao](https://github.com/JorgeConceicao-umaia), [@FranciscoDias](https://github.com/fmsj0) .
+Repositório para hospedar o projeto desenvolvido para a disciplina "SIBD", do segundo ano do curso TCM, UMAIA.
 
 ## Descrição do Tema
 
@@ -8,11 +8,8 @@ A loja de guitarras, com o crescimento do negócio e a diversidade de produtos, 
 
 ## Repository organization
 
-* **Source code**
-* Reports are in [docs folder](docs/).
-
-## Gallery
-
+* ** Source code in [src folder] (src/) **
+* ** Reports are in [docs folder](docs/) **
 
 ## Technologies
 
@@ -20,13 +17,11 @@ A loja de guitarras, com o crescimento do negócio e a diversidade de produtos, 
 * VS Code
 * MySQL
 
-### Frameworks and Libraries
-
-
 ## Reports
 
 :[REI](docs/REI/rei00.md)
 :[REBD](docs/REBD/rebd00.md)
+:[RPF](docs/RPF/rpf00.md)
 
 ## Team
 * Jorge Conceição [@JorgeConceicao](https://github.com/JorgeConceicao-umaia)
