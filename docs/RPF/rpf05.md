@@ -44,14 +44,14 @@ CREATE TABLE IF NOT EXISTS VENDA (
 
 -- Tabela GUITARRA
 CREATE TABLE IF NOT EXISTS GUITARRA (
-  n_serie VARCHAR(30) PRIMARY KEY,
+  id VARCHAR(30) PRIMARY KEY,
   modelo VARCHAR(50) NOT NULL,
   tipo VARCHAR(30),
   cor VARCHAR(30),
   acabamento VARCHAR(30),
   ano SMALLINT,
   preco DECIMAL(8,2) NOT NULL,
-  vendaId BIGINT, -- FK para a venda
+  vendaId BIGINT,
   FOREIGN KEY (vendaId) REFERENCES VENDA(id)
 );
 
@@ -74,7 +74,7 @@ VALUES (1, 'Joana', 'Joana2', 'normal');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
 VALUES ('João Costa', 'joao.costa@email.com', '123456789', 'Rua das Guitarras, Porto');
 
-INSERT INTO GUITARRA (n_serie, modelo, tipo, cor, acabamento, ano, preco)
+INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco)
 VALUES ('SN12345678', 'Stratocaster', 'solid', 'sunburst', 'brilhante', 2022, 999.99);
 
 INSERT INTO STOCK (modelo, quantidade, utilizadorId)
@@ -82,9 +82,6 @@ VALUES ('Stratocaster', 5, 1);
 
 INSERT INTO VENDA (valor, metodo_pagamento, clienteId, utilizadorId)
 VALUES (999.99, 'MBWay', 1, 1);
-
-INSERT INTO VENDA_GUITARRA (id_venda, n_serie)
-VALUES (1, 'SN12345678');
 
 SELECT modelo, quantidade
 FROM STOCK
@@ -112,7 +109,7 @@ VALUES ('João Costa', 'joao.costa@email.com', '123456789', 'Rua das Guitarras, 
 ### 2. Registar uma nova guitarra
 
 ```sql
-INSERT INTO GUITARRA (n_serie, modelo, tipo, cor, acabamento, ano, preco)
+INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco)
 VALUES ('SN12345678', 'Stratocaster', 'solid', 'sunburst', 'brilhante', 2022, 999.99);
 ```
 
@@ -123,7 +120,7 @@ VALUES ('SN12345678', 'Stratocaster', 'solid', 'sunburst', 'brilhante', 2022, 99
 ### 3. Registar stock de modelo
 
 ```sql
-INSERT INTO STOCK (modelo, quantidade, id_utilizador)
+INSERT INTO STOCK (modelo, quantidade, utilizadorId)
 VALUES ('Stratocaster', 5, 1);
 ```
 
@@ -134,7 +131,7 @@ VALUES ('Stratocaster', 5, 1);
 ### 4. Realizar uma venda
 
 ```sql
-INSERT INTO VENDA (valor, metodo_pagamento, id_cliente, id_utilizador)
+INSERT INTO VENDA (valor, metodo_pagamento, clienteId, utilizadorId)
 VALUES (999.99, 'MBWay', 1, 1);
 ```
 
@@ -145,8 +142,9 @@ VALUES (999.99, 'MBWay', 1, 1);
 ### 5. Associar guitarras vendidas a uma venda
 
 ```sql
-INSERT INTO VENDA_GUITARRA (id_venda, n_serie)
-VALUES (1, 'SN12345678');
+UPDATE GUITARRA
+SET vendId = 1
+WHERE n_serie = 'SN12345678';
 ```
 
 **Requisito**: Registar que uma guitarra foi vendida numa determinada venda.
@@ -170,7 +168,7 @@ WHERE quantidade < 5;
 ```sql
 SELECT u.nome, SUM(v.valor) AS total_vendas
 FROM UTILIZADOR u
-JOIN VENDA v ON u.id = v.id_utilizador
+JOIN VENDA v ON u.id = v.utilizadorId
 GROUP BY u.id;
 ```
 
