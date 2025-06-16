@@ -2,11 +2,11 @@
 
 ## Índice
 
-:[Introdução](rpf01.md)
-:[Esquema conceptual](rpf02.md)
-:[Normalização](rpf03.md)
-:[Esquema Relacional](rpf04.md)
-:[SQL](rpf05.md)
+- [Introdução](rpf01.md)
+- [Esquema conceptual](rpf02.md)
+- [Normalização](rpf03.md)
+- [Esquema Relacional](rpf04.md)
+- [SQL](rpf05.md)
 
 ## Grupo 1
 
