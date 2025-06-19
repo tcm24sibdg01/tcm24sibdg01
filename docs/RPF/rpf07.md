@@ -1,4 +1,4 @@
-# C8 : Postman
+# C7 : Postman
 
 - Os endpoints omitidos do Postman, foram omitidos para responder a lógica funcional da loja.
 
