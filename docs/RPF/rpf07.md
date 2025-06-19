@@ -49,5 +49,7 @@
 | `PATCH`| {{baseUrl}}/utilizadors/:id |
 | `DELETE`| {{baseUrl}}/utilizadors/:id |
 
+---
+
 | [< Previous](rebd06.md) | [^ Inicio](rebd00.md) |
 | :---------------------- | :------------------------------------------------------: |
