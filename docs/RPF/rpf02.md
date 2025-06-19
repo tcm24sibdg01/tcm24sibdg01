@@ -2,6 +2,8 @@
 
 # Modelo Entidade–Associação (E/A)
 
+<img src="../img/LojaGuitar.png" alt="" width="1000" />
+
 ## Entidades Principais
 
 ### **Guitarra**
