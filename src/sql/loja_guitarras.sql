@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS VENDA (
 
 -- Tabela GUITARRA
 CREATE TABLE IF NOT EXISTS GUITARRA (
-  id VARCHAR(30) PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   modelo VARCHAR(50) NOT NULL,
   tipo VARCHAR(30),
   cor VARCHAR(30),
@@ -250,66 +250,66 @@ VALUES ('2024-06-03', 800, 'dinheiro', 30, 30);
 
 -- inserts guitarra
 
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000001', 'Modelo1', 'tipo1', 'cor1', 'acabamento1', 2000, 405, 1);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000002', 'Modelo2', 'tipo2', 'cor2', 'acabamento2', 2000, 410, 2);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000003', 'Modelo3', 'tipo3', 'cor3', 'acabamento3', 2000, 415, 3);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000004', 'Modelo4', 'tipo4', 'cor4', 'acabamento4', 2000, 420, 4);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000005', 'Modelo5', 'tipo5', 'cor5', 'acabamento5', 2000, 425, 5);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000006', 'Modelo6', 'tipo6', 'cor6', 'acabamento6', 2000, 430, 6);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000007', 'Modelo7', 'tipo7', 'cor7', 'acabamento7', 2000, 435, 7);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000008', 'Modelo8', 'tipo8', 'cor8', 'acabamento8', 2000, 440, 8);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000009', 'Modelo9', 'tipo9', 'cor9', 'acabamento9', 2000, 445, 9);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000010', 'Modelo10', 'tipo10', 'cor10', 'acabamento10', 2000, 450, 10);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000011', 'Modelo11', 'tipo11', 'cor11', 'acabamento11', 2000, 455, 11);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000012', 'Modelo12', 'tipo12', 'cor12', 'acabamento12', 2000, 460, 12);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000013', 'Modelo13', 'tipo13', 'cor13', 'acabamento13', 2000, 465, 13);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000014', 'Modelo14', 'tipo14', 'cor14', 'acabamento14', 2000, 470, 14);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000015', 'Modelo15', 'tipo15', 'cor15', 'acabamento15', 2000, 475, 15);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000016', 'Modelo16', 'tipo16', 'cor16', 'acabamento16', 2000, 480, 16);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000017', 'Modelo17', 'tipo17', 'cor17', 'acabamento17', 2000, 485, 17);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000018', 'Modelo18', 'tipo18', 'cor18', 'acabamento18', 2000, 490, 18);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000019', 'Modelo19', 'tipo19', 'cor19', 'acabamento19', 2000, 495, 19);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000020', 'Modelo20', 'tipo20', 'cor20', 'acabamento20', 2000, 500, 20);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000021', 'Modelo21', 'tipo21', 'cor21', 'acabamento21', 2000, 505, 21);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000022', 'Modelo22', 'tipo22', 'cor22', 'acabamento22', 2000, 510, 22);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000023', 'Modelo23', 'tipo23', 'cor23', 'acabamento23', 2000, 515, 23);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000024', 'Modelo24', 'tipo24', 'cor24', 'acabamento24', 2000, 520, 24);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000025', 'Modelo25', 'tipo25', 'cor25', 'acabamento25', 2000, 525, 25);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000026', 'Modelo26', 'tipo26', 'cor26', 'acabamento26', 2000, 530, 26);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000027', 'Modelo27', 'tipo27', 'cor27', 'acabamento27', 2000, 535, 27);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000028', 'Modelo28', 'tipo28', 'cor28', 'acabamento28', 2000, 540, 28);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000029', 'Modelo29', 'tipo29', 'cor29', 'acabamento29', 2000, 545, 29);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000030', 'Modelo30', 'tipo30', 'cor30', 'acabamento30', 2000, 550, 30);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo1', 'tipo1', 'cor1', 'acabamento1', 2000, 405, 1);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo2', 'tipo2', 'cor2', 'acabamento2', 2000, 410, 2);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo3', 'tipo3', 'cor3', 'acabamento3', 2000, 415, 3);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo4', 'tipo4', 'cor4', 'acabamento4', 2000, 420, 4);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo5', 'tipo5', 'cor5', 'acabamento5', 2000, 425, 5);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo6', 'tipo6', 'cor6', 'acabamento6', 2000, 430, 6);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo7', 'tipo7', 'cor7', 'acabamento7', 2000, 435, 7);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo8', 'tipo8', 'cor8', 'acabamento8', 2000, 440, 8);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo9', 'tipo9', 'cor9', 'acabamento9', 2000, 445, 9);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo10', 'tipo10', 'cor10', 'acabamento10', 2000, 450, 10);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo11', 'tipo11', 'cor11', 'acabamento11', 2000, 455, 11);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo12', 'tipo12', 'cor12', 'acabamento12', 2000, 460, 12);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo13', 'tipo13', 'cor13', 'acabamento13', 2000, 465, 13);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo14', 'tipo14', 'cor14', 'acabamento14', 2000, 470, 14);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo15', 'tipo15', 'cor15', 'acabamento15', 2000, 475, 15);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo16', 'tipo16', 'cor16', 'acabamento16', 2000, 480, 16);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo17', 'tipo17', 'cor17', 'acabamento17', 2000, 485, 17);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo18', 'tipo18', 'cor18', 'acabamento18', 2000, 490, 18);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo19', 'tipo19', 'cor19', 'acabamento19', 2000, 495, 19);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo20', 'tipo20', 'cor20', 'acabamento20', 2000, 500, 20);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo21', 'tipo21', 'cor21', 'acabamento21', 2000, 505, 21);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo22', 'tipo22', 'cor22', 'acabamento22', 2000, 510, 22);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo23', 'tipo23', 'cor23', 'acabamento23', 2000, 515, 23);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo24', 'tipo24', 'cor24', 'acabamento24', 2000, 520, 24);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo25', 'tipo25', 'cor25', 'acabamento25', 2000, 525, 25);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo26', 'tipo26', 'cor26', 'acabamento26', 2000, 530, 26);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo27', 'tipo27', 'cor27', 'acabamento27', 2000, 535, 27);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo28', 'tipo28', 'cor28', 'acabamento28', 2000, 540, 28);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo29', 'tipo29', 'cor29', 'acabamento29', 2000, 545, 29);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo30', 'tipo30', 'cor30', 'acabamento30', 2000, 550, 30);
 
 -- inserts stock
 
