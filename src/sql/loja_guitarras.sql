@@ -73,7 +73,7 @@ INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador5', 'user5', 'normal');
 INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador6', 'user6', 'normal');
-INSERT INTO UTILIZADOR (nome, username, tipo perfil)
+INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador7', 'user7', 'normal');
 INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador8', 'user8', 'normal');
@@ -81,8 +81,8 @@ INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador9', 'user9', 'normal');
 INSERT INTO UTILIZADOR (nome, username, tipo_perfil) 
 VALUES ('Utilizador10', 'user10', 'normal');
-INSERT INTO UTILIZADOR (nome, username, tipo perfil
- VALUES ('Utilizador11', 'user11', 'normal');
+INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
+VALUES ('Utilizador11', 'user11', 'normal');
 INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador12', 'user12', 'normal');
 INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
@@ -145,45 +145,45 @@ VALUES ('Cliente9', 'mail9@mail.com', '100000009', 'Rua 9');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
 VALUES ('Cliente10', 'mail10@mail.com', '100000000', 'Rua 10');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente11', 'mail11@mail.com', '100000001', 'Rua 11');
+VALUES ('Cliente11', 'mail11@mail.com', '100000011', 'Rua 11');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente12', 'mail12@mail.com', '100000002', 'Rua 12');
+VALUES ('Cliente12', 'mail12@mail.com', '100000012', 'Rua 12');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente13', 'mail13@mail.com', '100000003', 'Rua 13');
+VALUES ('Cliente13', 'mail13@mail.com', '100000013', 'Rua 13');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente14', 'mail14@mail.com', '100000004', 'Rua 14');
+VALUES ('Cliente14', 'mail14@mail.com', '100000014', 'Rua 14');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente15', 'mail15@mail.com', '100000005', 'Rua 15');
+VALUES ('Cliente15', 'mail15@mail.com', '100000015', 'Rua 15');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente16', 'mail16@mail.com', '100000006', 'Rua 16');
+VALUES ('Cliente16', 'mail16@mail.com', '100000016', 'Rua 16');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente17', 'mail17@mail.com', '100000007', 'Rua 17');
+VALUES ('Cliente17', 'mail17@mail.com', '100000017', 'Rua 17');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente18', 'mail18@mail.com', '100000008', 'Rua 18');
+VALUES ('Cliente18', 'mail18@mail.com', '100000018', 'Rua 18');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente19', 'mail19@mail.com', '100000009', 'Rua 19');
+VALUES ('Cliente19', 'mail19@mail.com', '100000019', 'Rua 19');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente20', 'mail20@mail.com', '100000000', 'Rua 20');
+VALUES ('Cliente20', 'mail20@mail.com', '100000020', 'Rua 20');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente21', 'mail21@mail.com', '100000001', 'Rua 21');
+VALUES ('Cliente21', 'mail21@mail.com', '100000021', 'Rua 21');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente22', 'mail22@mail.com', '100000002', 'Rua 22');
+VALUES ('Cliente22', 'mail22@mail.com', '100000022', 'Rua 22');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente23', 'mail23@mail.com', '100000003', 'Rua 23');
+VALUES ('Cliente23', 'mail23@mail.com', '100000023', 'Rua 23');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente24', 'mail24@mail.com', '100000004', 'Rua 24');
+VALUES ('Cliente24', 'mail24@mail.com', '100000024', 'Rua 24');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente25', 'mail25@mail.com', '100000005', 'Rua 25');
+VALUES ('Cliente25', 'mail25@mail.com', '100000025', 'Rua 25');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente26', 'mail26@mail.com', '100000006', 'Rua 26');
+VALUES ('Cliente26', 'mail26@mail.com', '100000026', 'Rua 26');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente27', 'mail27@mail.com', '100000007', 'Rua 27');
+VALUES ('Cliente27', 'mail27@mail.com', '100000027', 'Rua 27');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente28', 'mail28@mail.com', '100000008', 'Rua 28');
+VALUES ('Cliente28', 'mail28@mail.com', '100000028', 'Rua 28');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente29', 'mail29@mail.com', '100000009', 'Rua 29');
+VALUES ('Cliente29', 'mail29@mail.com', '100000029', 'Rua 29');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente30', 'mail30@mail.com', '100000000', 'Rua 30');
+VALUES ('Cliente30', 'mail30@mail.com', '100000030', 'Rua 30');
 
 -- inserts venda
 
