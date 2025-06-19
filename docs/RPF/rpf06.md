@@ -14,6 +14,8 @@
 |-------|-------|
 | <img src="../img/sql_print.png" alt="" width="550" /> | <img src="../img/migrate_print.png" alt="" width="550" /> |
 
+**Comparação entre CREATE TABLE do MySQL e o CREATE TABLE do SQL Loopback**
+
 ---
 
 | [< Previous](rpf05.md) | [^ Início](rpf00.md) | [Next >](rpf07.md) |
