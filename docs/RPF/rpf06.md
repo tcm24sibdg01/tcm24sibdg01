@@ -10,7 +10,7 @@
 
 ## SQL Migrate
 
-| original | migratet |
+| original | migrate |
 |-------|-------|
 | <img src="../img/sql_print.png" alt="" width="550" /> | <img src="../img/migrate_print.png" alt="" width="550" /> |
 
