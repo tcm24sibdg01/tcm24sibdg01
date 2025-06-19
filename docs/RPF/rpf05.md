@@ -74,8 +74,8 @@ VALUES (1, 'Joana', 'Joana2', 'normal');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
 VALUES ('João Costa', 'joao.costa@email.com', '123456789', 'Rua das Guitarras, Porto');
 
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco)
-VALUES ('SN12345678', 'Stratocaster', 'solid', 'sunburst', 'brilhante', 2022, 999.99);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco)
+VALUES ('Stratocaster', 'solid', 'sunburst', 'brilhante', 2022, 999.99);
 
 INSERT INTO STOCK (modelo, quantidade, utilizadorId)
 VALUES ('Stratocaster', 5, 1);
