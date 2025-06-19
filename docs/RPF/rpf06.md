@@ -16,6 +16,8 @@
 
 **Comparação entre CREATE TABLE do MySQL e o CREATE TABLE do SQL Loopback**
 
+- Pela falta de especificação de tamanho de domínios o LoopBack converteu para VARCHAR(512) todos os strings.
+
 ---
 
 | [< Previous](rpf05.md) | [^ Início](rpf00.md) | [Next >](rpf07.md) |
