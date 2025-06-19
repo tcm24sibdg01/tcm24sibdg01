@@ -16,5 +16,5 @@
 
 ---
 
-| [< Previous](rpf05.md) | [^ InÃcio](rpf00.md) | [Next >](rpf07.md) |
+| [< Previous](rpf05.md) | [^ Início](rpf00.md) | [Next >](rpf07.md) |
 | :---------------------- | :-------------------: | ------------------: |
