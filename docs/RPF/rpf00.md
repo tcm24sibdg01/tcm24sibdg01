@@ -7,6 +7,8 @@
 - [Normalização](rpf03.md)
 - [Esquema Relacional](rpf04.md)
 - [SQL](rpf05.md)
+- [API](rpf06.md)
+- [Postman](rpf07.md)
 
 ## Grupo 1
 

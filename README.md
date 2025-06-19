@@ -8,8 +8,8 @@ A loja de guitarras, com o crescimento do negócio e a diversidade de produtos, 
 
 ## Repository organization
 
-* ** Source code in [src folder](src/) **
-* ** Reports are in [docs folder](docs/) **
+* **Source code in [src folder](src/)**
+* **Reports are in [docs folder](docs/)**
 
 ## Technologies
 

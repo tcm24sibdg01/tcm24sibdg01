@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS VENDA (
 
 -- Tabela GUITARRA
 CREATE TABLE IF NOT EXISTS GUITARRA (
-  id VARCHAR(30) PRIMARY KEY,
+  id int AUTO_INCREMENT PRIMARY KEY,
   modelo VARCHAR(50) NOT NULL,
   tipo VARCHAR(30),
   cor VARCHAR(30),
@@ -74,8 +74,8 @@ VALUES (1, 'Joana', 'Joana2', 'normal');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
 VALUES ('João Costa', 'joao.costa@email.com', '123456789', 'Rua das Guitarras, Porto');
 
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco)
-VALUES ('SN12345678', 'Stratocaster', 'solid', 'sunburst', 'brilhante', 2022, 999.99);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco)
+VALUES ('Stratocaster', 'solid', 'sunburst', 'brilhante', 2022, 999.99);
 
 INSERT INTO STOCK (modelo, quantidade, utilizadorId)
 VALUES ('Stratocaster', 5, 1);
@@ -176,5 +176,5 @@ GROUP BY u.id;
 
 ---
 
-| [< Previous](rebd04.md) | [^ Inicio](rebd00.md) |
-| :---------------------- | :------------------------------------------------------: |
+| [< Previous](rpf04.md) | [^ Início](rpf00.md) | [Next >](rpf06.md) |
+| :---------------------- | :-------------------: | ------------------: |

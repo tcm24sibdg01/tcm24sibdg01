@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS VENDA (
 
 -- Tabela GUITARRA
 CREATE TABLE IF NOT EXISTS GUITARRA (
-  id VARCHAR(30) PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   modelo VARCHAR(50) NOT NULL,
   tipo VARCHAR(30),
   cor VARCHAR(30),
@@ -73,7 +73,7 @@ INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador5', 'user5', 'normal');
 INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador6', 'user6', 'normal');
-INSERT INTO UTILIZADOR (nome, username, tipo perfil)
+INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador7', 'user7', 'normal');
 INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador8', 'user8', 'normal');
@@ -81,8 +81,8 @@ INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador9', 'user9', 'normal');
 INSERT INTO UTILIZADOR (nome, username, tipo_perfil) 
 VALUES ('Utilizador10', 'user10', 'normal');
-INSERT INTO UTILIZADOR (nome, username, tipo perfil
- VALUES ('Utilizador11', 'user11', 'normal');
+INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
+VALUES ('Utilizador11', 'user11', 'normal');
 INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
 VALUES ('Utilizador12', 'user12', 'normal');
 INSERT INTO UTILIZADOR (nome, username, tipo_perfil)
@@ -145,45 +145,45 @@ VALUES ('Cliente9', 'mail9@mail.com', '100000009', 'Rua 9');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
 VALUES ('Cliente10', 'mail10@mail.com', '100000000', 'Rua 10');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente11', 'mail11@mail.com', '100000001', 'Rua 11');
+VALUES ('Cliente11', 'mail11@mail.com', '100000011', 'Rua 11');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente12', 'mail12@mail.com', '100000002', 'Rua 12');
+VALUES ('Cliente12', 'mail12@mail.com', '100000012', 'Rua 12');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente13', 'mail13@mail.com', '100000003', 'Rua 13');
+VALUES ('Cliente13', 'mail13@mail.com', '100000013', 'Rua 13');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente14', 'mail14@mail.com', '100000004', 'Rua 14');
+VALUES ('Cliente14', 'mail14@mail.com', '100000014', 'Rua 14');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente15', 'mail15@mail.com', '100000005', 'Rua 15');
+VALUES ('Cliente15', 'mail15@mail.com', '100000015', 'Rua 15');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente16', 'mail16@mail.com', '100000006', 'Rua 16');
+VALUES ('Cliente16', 'mail16@mail.com', '100000016', 'Rua 16');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente17', 'mail17@mail.com', '100000007', 'Rua 17');
+VALUES ('Cliente17', 'mail17@mail.com', '100000017', 'Rua 17');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente18', 'mail18@mail.com', '100000008', 'Rua 18');
+VALUES ('Cliente18', 'mail18@mail.com', '100000018', 'Rua 18');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente19', 'mail19@mail.com', '100000009', 'Rua 19');
+VALUES ('Cliente19', 'mail19@mail.com', '100000019', 'Rua 19');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente20', 'mail20@mail.com', '100000000', 'Rua 20');
+VALUES ('Cliente20', 'mail20@mail.com', '100000020', 'Rua 20');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente21', 'mail21@mail.com', '100000001', 'Rua 21');
+VALUES ('Cliente21', 'mail21@mail.com', '100000021', 'Rua 21');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente22', 'mail22@mail.com', '100000002', 'Rua 22');
+VALUES ('Cliente22', 'mail22@mail.com', '100000022', 'Rua 22');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente23', 'mail23@mail.com', '100000003', 'Rua 23');
+VALUES ('Cliente23', 'mail23@mail.com', '100000023', 'Rua 23');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente24', 'mail24@mail.com', '100000004', 'Rua 24');
+VALUES ('Cliente24', 'mail24@mail.com', '100000024', 'Rua 24');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente25', 'mail25@mail.com', '100000005', 'Rua 25');
+VALUES ('Cliente25', 'mail25@mail.com', '100000025', 'Rua 25');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente26', 'mail26@mail.com', '100000006', 'Rua 26');
+VALUES ('Cliente26', 'mail26@mail.com', '100000026', 'Rua 26');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente27', 'mail27@mail.com', '100000007', 'Rua 27');
+VALUES ('Cliente27', 'mail27@mail.com', '100000027', 'Rua 27');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente28', 'mail28@mail.com', '100000008', 'Rua 28');
+VALUES ('Cliente28', 'mail28@mail.com', '100000028', 'Rua 28');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente29', 'mail29@mail.com', '100000009', 'Rua 29');
+VALUES ('Cliente29', 'mail29@mail.com', '100000029', 'Rua 29');
 INSERT INTO CLIENTE (nome, email, NIF, morada)
-VALUES ('Cliente30', 'mail30@mail.com', '100000000', 'Rua 30');
+VALUES ('Cliente30', 'mail30@mail.com', '100000030', 'Rua 30');
 
 -- inserts venda
 
@@ -250,66 +250,66 @@ VALUES ('2024-06-03', 800, 'dinheiro', 30, 30);
 
 -- inserts guitarra
 
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000001', 'Modelo1', 'tipo1', 'cor1', 'acabamento1', 2000, 405, 1);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000002', 'Modelo2', 'tipo2', 'cor2', 'acabamento2', 2000, 410, 2);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000003', 'Modelo3', 'tipo3', 'cor3', 'acabamento3', 2000, 415, 3);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000004', 'Modelo4', 'tipo4', 'cor4', 'acabamento4', 2000, 420, 4);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000005', 'Modelo5', 'tipo5', 'cor5', 'acabamento5', 2000, 425, 5);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000006', 'Modelo6', 'tipo6', 'cor6', 'acabamento6', 2000, 430, 6);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000007', 'Modelo7', 'tipo7', 'cor7', 'acabamento7', 2000, 435, 7);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000008', 'Modelo8', 'tipo8', 'cor8', 'acabamento8', 2000, 440, 8);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000009', 'Modelo9', 'tipo9', 'cor9', 'acabamento9', 2000, 445, 9);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000010', 'Modelo10', 'tipo10', 'cor10', 'acabamento10', 2000, 450, 10);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000011', 'Modelo11', 'tipo11', 'cor11', 'acabamento11', 2000, 455, 11);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000012', 'Modelo12', 'tipo12', 'cor12', 'acabamento12', 2000, 460, 12);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000013', 'Modelo13', 'tipo13', 'cor13', 'acabamento13', 2000, 465, 13);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000014', 'Modelo14', 'tipo14', 'cor14', 'acabamento14', 2000, 470, 14);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000015', 'Modelo15', 'tipo15', 'cor15', 'acabamento15', 2000, 475, 15);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000016', 'Modelo16', 'tipo16', 'cor16', 'acabamento16', 2000, 480, 16);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000017', 'Modelo17', 'tipo17', 'cor17', 'acabamento17', 2000, 485, 17);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000018', 'Modelo18', 'tipo18', 'cor18', 'acabamento18', 2000, 490, 18);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000019', 'Modelo19', 'tipo19', 'cor19', 'acabamento19', 2000, 495, 19);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000020', 'Modelo20', 'tipo20', 'cor20', 'acabamento20', 2000, 500, 20);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000021', 'Modelo21', 'tipo21', 'cor21', 'acabamento21', 2000, 505, 21);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000022', 'Modelo22', 'tipo22', 'cor22', 'acabamento22', 2000, 510, 22);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000023', 'Modelo23', 'tipo23', 'cor23', 'acabamento23', 2000, 515, 23);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000024', 'Modelo24', 'tipo24', 'cor24', 'acabamento24', 2000, 520, 24);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000025', 'Modelo25', 'tipo25', 'cor25', 'acabamento25', 2000, 525, 25);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000026', 'Modelo26', 'tipo26', 'cor26', 'acabamento26', 2000, 530, 26);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000027', 'Modelo27', 'tipo27', 'cor27', 'acabamento27', 2000, 535, 27);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000028', 'Modelo28', 'tipo28', 'cor28', 'acabamento28', 2000, 540, 28);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000029', 'Modelo29', 'tipo29', 'cor29', 'acabamento29', 2000, 545, 29);
-INSERT INTO GUITARRA (id, modelo, tipo, cor, acabamento, ano, preco, vendaId)
-VALUES ('SN000030', 'Modelo30', 'tipo30', 'cor30', 'acabamento30', 2000, 550, 30);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo1', 'tipo1', 'cor1', 'acabamento1', 2000, 405, 1);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo2', 'tipo2', 'cor2', 'acabamento2', 2000, 410, 2);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo3', 'tipo3', 'cor3', 'acabamento3', 2000, 415, 3);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo4', 'tipo4', 'cor4', 'acabamento4', 2000, 420, 4);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo5', 'tipo5', 'cor5', 'acabamento5', 2000, 425, 5);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo6', 'tipo6', 'cor6', 'acabamento6', 2000, 430, 6);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo7', 'tipo7', 'cor7', 'acabamento7', 2000, 435, 7);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo8', 'tipo8', 'cor8', 'acabamento8', 2000, 440, 8);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo9', 'tipo9', 'cor9', 'acabamento9', 2000, 445, 9);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo10', 'tipo10', 'cor10', 'acabamento10', 2000, 450, 10);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo11', 'tipo11', 'cor11', 'acabamento11', 2000, 455, 11);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo12', 'tipo12', 'cor12', 'acabamento12', 2000, 460, 12);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo13', 'tipo13', 'cor13', 'acabamento13', 2000, 465, 13);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo14', 'tipo14', 'cor14', 'acabamento14', 2000, 470, 14);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo15', 'tipo15', 'cor15', 'acabamento15', 2000, 475, 15);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo16', 'tipo16', 'cor16', 'acabamento16', 2000, 480, 16);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo17', 'tipo17', 'cor17', 'acabamento17', 2000, 485, 17);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo18', 'tipo18', 'cor18', 'acabamento18', 2000, 490, 18);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo19', 'tipo19', 'cor19', 'acabamento19', 2000, 495, 19);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo20', 'tipo20', 'cor20', 'acabamento20', 2000, 500, 20);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo21', 'tipo21', 'cor21', 'acabamento21', 2000, 505, 21);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo22', 'tipo22', 'cor22', 'acabamento22', 2000, 510, 22);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo23', 'tipo23', 'cor23', 'acabamento23', 2000, 515, 23);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo24', 'tipo24', 'cor24', 'acabamento24', 2000, 520, 24);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo25', 'tipo25', 'cor25', 'acabamento25', 2000, 525, 25);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo26', 'tipo26', 'cor26', 'acabamento26', 2000, 530, 26);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo27', 'tipo27', 'cor27', 'acabamento27', 2000, 535, 27);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo28', 'tipo28', 'cor28', 'acabamento28', 2000, 540, 28);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo29', 'tipo29', 'cor29', 'acabamento29', 2000, 545, 29);
+INSERT INTO GUITARRA (modelo, tipo, cor, acabamento, ano, preco, vendaId)
+VALUES ('Modelo30', 'tipo30', 'cor30', 'acabamento30', 2000, 550, 30);
 
 -- inserts stock
 

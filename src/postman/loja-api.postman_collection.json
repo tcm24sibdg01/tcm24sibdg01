@@ -1,0 +1,2841 @@
+{
+	"info": {
+		"_postman_id": "dd9c0dc1-d388-45e7-8691-6aa959ecbb8c",
+		"name": "loja-api",
+		"description": "sql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45944616"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Cliente Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nome\": \"quis nulla dolore non\",\n  \"email\": \"laborum dolor\",\n  \"NIF\": \"laboris sunt exercitation\",\n  \"morada\": \"sed anim adipisicing dolore\",\n  \"id\": -40421495.29197059\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nome\": \"quis nulla dolore non\",\n  \"email\": \"laborum dolor\",\n  \"NIF\": \"laboris sunt exercitation\",\n  \"morada\": \"sed anim adipisicing dolore\",\n  \"id\": -40421495.29197059\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Cliente PUT success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Cliente Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 11861961.049842626,\n  \"nome\": \"in\",\n  \"email\": \"nostrud sit dolore veniam\",\n  \"NIF\": \"consectetur exercitation et quis Excepteur\",\n  \"morada\": \"Excepteur est aliquip ipsum\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": 11861961.049842626,\n  \"nome\": \"in\",\n  \"email\": \"nostrud sit dolore veniam\",\n  \"NIF\": \"consectetur exercitation et quis Excepteur\",\n  \"morada\": \"Excepteur est aliquip ipsum\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Cliente PATCH success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Cliente Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Cliente model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"nome\": \"sunt proident enim do\",\n  \"email\": \"sunt amet\",\n  \"NIF\": \"sed\",\n  \"morada\": \"velit consectetur commodo aliquip sint\",\n  \"id\": 55221788.378294796\n}"
+								}
+							]
+						},
+						{
+							"name": "Cliente Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Cliente DELETE success\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Cliente Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nome\": \"eu ullamco pariatur\",\n  \"email\": \"dolor anim\",\n  \"NIF\": \"consectetur mollit\",\n  \"morada\": \"occaecat sed ad\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clientes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cliente model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nome\": \"eu ullamco pariatur\",\n  \"email\": \"dolor anim\",\n  \"NIF\": \"consectetur mollit\",\n  \"morada\": \"occaecat sed ad\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"nome\": \"quis nulla dolore non\",\n  \"email\": \"laborum dolor\",\n  \"NIF\": \"laboris sunt exercitation\",\n  \"morada\": \"sed anim adipisicing dolore\",\n  \"id\": -40421495.29197059\n}"
+						}
+					]
+				},
+				{
+					"name": "Cliente Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/clientes?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Cliente model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/clientes?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"nome\": \"non do tempor eu\",\n    \"email\": \"sit anim ex\",\n    \"NIF\": \"dolore ex\",\n    \"morada\": \"est\",\n    \"id\": 86500480.19442388\n  },\n  {\n    \"nome\": \"sed fugiat aliquip proident in\",\n    \"email\": \"exercitation Excepteur Duis ex\",\n    \"NIF\": \"aliqua\",\n    \"morada\": \"laborum Ut aute\",\n    \"id\": 44743946.11050433\n  }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "guitarras",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "venda",
+							"item": [
+								{
+									"name": "Guitarra Venda Controller.get Venda",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/guitarras/:id/venda",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"guitarras",
+												":id",
+												"venda"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "ipsum ullamco",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Venda belonging to Guitarra",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/guitarras/:id/venda",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"guitarras",
+														":id",
+														"venda"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"data\": \"anim culpa voluptate\",\n  \"valor\": -64873631.56500163,\n  \"metodo_pagamento\": \"fugiat mini\",\n  \"id\": -22058024.771940544,\n  \"clienteId\": -38798189.56298173,\n  \"utilizadorId\": 12644108.466485053\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Guitarra Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"modelo\": \"consectetur laborum\",\n  \"tipo\": \"Duis qui elit\",\n  \"cor\": \"anim laborum ex aliqua\",\n  \"acabamento\": \"minim sint officia\",\n  \"ano\": 30946670.007319495,\n  \"preco\": 42988475.85618883,\n  \"id\": \"ex\",\n  \"vendaId\": 31675418.802831516\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/guitarras/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"guitarras",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "ipsum ullamco",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"modelo\": \"consectetur laborum\",\n  \"tipo\": \"Duis qui elit\",\n  \"cor\": \"anim laborum ex aliqua\",\n  \"acabamento\": \"minim sint officia\",\n  \"ano\": 30946670.007319495,\n  \"preco\": 42988475.85618883,\n  \"id\": \"ex\",\n  \"vendaId\": 31675418.802831516\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/guitarras/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"guitarras",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Guitarra PUT success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Guitarra Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"labore cupidatat\",\n  \"modelo\": \"ea dolor proident\",\n  \"tipo\": \"deserunt laboris adipisicing in exercitation\",\n  \"cor\": \"amet velit dolore\",\n  \"acabamento\": \"enim sint ipsum\",\n  \"ano\": 25722932.221319452,\n  \"preco\": 83679268.891487,\n  \"vendaId\": 90233734.77036789\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/guitarras/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"guitarras",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "ipsum ullamco",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"labore cupidatat\",\n  \"modelo\": \"ea dolor proident\",\n  \"tipo\": \"deserunt laboris adipisicing in exercitation\",\n  \"cor\": \"amet velit dolore\",\n  \"acabamento\": \"enim sint ipsum\",\n  \"ano\": 25722932.221319452,\n  \"preco\": 83679268.891487,\n  \"vendaId\": 90233734.77036789\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/guitarras/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"guitarras",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Guitarra PATCH success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Guitarra Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/guitarras/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"guitarras",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "ipsum ullamco",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Guitarra model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/guitarras/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"guitarras",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"modelo\": \"aliqua ad \",\n  \"tipo\": \"eiusmod ut veniam\",\n  \"cor\": \"consectetur eu eiusmod enim\",\n  \"acabamento\": \"non enim\",\n  \"ano\": 87468895.8868854,\n  \"preco\": -13887105.553929493,\n  \"id\": \"ex aliquip ipsum nostrud aliqua\",\n  \"vendaId\": 46168965.08156034,\n  \"venda\": {\n    \"data\": \"irure\",\n    \"valor\": -13878680.985062972,\n    \"metodo_pagamento\": \"laboris non proident\",\n    \"id\": 73082691.82065678,\n    \"clienteId\": -58709865.742143296,\n    \"utilizadorId\": -5828767.016796961,\n    \"cliente\": {\n      \"nome\": \"qui nisi\",\n      \"email\": \"aute nostrud\",\n      \"NIF\": \"officia\",\n      \"morada\": \"Duis tempor veniam\",\n      \"id\": -43252877.66689314\n    },\n    \"foreignKey\": {},\n    \"utilizador\": {\n      \"nome\": \"reprehenderit nisi\",\n      \"username\": \"reprehenderit Lorem ullamco ut\",\n      \"tipo_perfil\": \"do nulla cillum\",\n      \"id\": -32740343.521133706\n    }\n  },\n  \"foreignKey\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Guitarra Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/guitarras/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"guitarras",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "ipsum ullamco",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/guitarras/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"guitarras",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Guitarra DELETE success\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Guitarra Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"modelo\": \"ipsum Ut do in\",\n  \"tipo\": \"cillum in dolore qui sunt\",\n  \"cor\": \"elit\",\n  \"acabamento\": \"laborum dolor nisi anim quis\",\n  \"ano\": -4953753.214189276,\n  \"preco\": 69724666.55946863,\n  \"vendaId\": -69594497.08147275\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/guitarras",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"guitarras"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Guitarra model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"modelo\": \"ipsum Ut do in\",\n  \"tipo\": \"cillum in dolore qui sunt\",\n  \"cor\": \"elit\",\n  \"acabamento\": \"laborum dolor nisi anim quis\",\n  \"ano\": -4953753.214189276,\n  \"preco\": 69724666.55946863,\n  \"vendaId\": -69594497.08147275\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/guitarras",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"guitarras"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"modelo\": \"consectetur laborum\",\n  \"tipo\": \"Duis qui elit\",\n  \"cor\": \"anim laborum ex aliqua\",\n  \"acabamento\": \"minim sint officia\",\n  \"ano\": 30946670.007319495,\n  \"preco\": 42988475.85618883,\n  \"id\": \"ex\",\n  \"vendaId\": 31675418.802831516\n}"
+						}
+					]
+				},
+				{
+					"name": "Guitarra Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/guitarras?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"guitarras"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Guitarra model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/guitarras?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"guitarras"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"modelo\": \"officia quis\",\n    \"tipo\": \"irure nulla non eiusmod \",\n    \"cor\": \"i\",\n    \"acabamento\": \"pariatur irure in mollit quis\",\n    \"ano\": 42413775.34575537,\n    \"preco\": -85328540.24841003,\n    \"id\": \"qui nulla\",\n    \"vendaId\": 20384037.428384572,\n    \"venda\": {\n      \"data\": \"ad ex sint\",\n      \"valor\": -90676798.91272226,\n      \"metodo_pagamento\": \"sunt officia est minim Duis\",\n      \"id\": 76432054.88725856,\n      \"clienteId\": 37205195.88246924,\n      \"utilizadorId\": 33093999.576220095,\n      \"cliente\": {\n        \"nome\": \"in sit\",\n        \"email\": \"cillum labore elit commodo enim\",\n        \"NIF\": \"nisi ad\",\n        \"morada\": \"dolo\",\n        \"id\": -6854236.583953857\n      },\n      \"foreignKey\": {},\n      \"utilizador\": {\n        \"nome\": \"laboris\",\n        \"username\": \"Ut dolor pariatur Excepteur\",\n        \"tipo_perfil\": \"cillum nulla\",\n        \"id\": 9708753.849595726\n      }\n    },\n    \"foreignKey\": {}\n  },\n  {\n    \"modelo\": \"elit mollit sint\",\n    \"tipo\": \"deserunt nulla\",\n    \"cor\": \"amet\",\n    \"acabamento\": \"est au\",\n    \"ano\": 48161102.464062124,\n    \"preco\": -9406222.997861758,\n    \"id\": \"commodo pariatur dolore eu\",\n    \"vendaId\": 12107461.902919918,\n    \"venda\": {\n      \"data\": \"dolor proident ullamco commodo\",\n      \"valor\": 36206593.60668713,\n      \"metodo_pagamento\": \"id voluptate sed\",\n      \"id\": -94074155.89697364,\n      \"clienteId\": 46563099.48090622,\n      \"utilizadorId\": -29044950.925919637,\n      \"cliente\": {\n        \"nome\": \"ea fugiat deserunt aliqua anim\",\n        \"email\": \"Lorem esse\",\n        \"NIF\": \"dolore et\",\n        \"morada\": \"dolor anim\",\n        \"id\": -48865767.298921935\n      },\n      \"foreignKey\": {},\n      \"utilizador\": {\n        \"nome\": \"proident qui\",\n        \"username\": \"dolor quis ad voluptate ex\",\n        \"tipo_perfil\": \"ad nulla proident\",\n        \"id\": -67492340.54802203\n      }\n    },\n    \"foreignKey\": {}\n  }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "vendas",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "cliente",
+							"item": [
+								{
+									"name": "Venda Cliente Controller.get Cliente",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/vendas/:id/cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vendas",
+												":id",
+												"cliente"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-22587303.153514028",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Cliente belonging to Venda",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/vendas/:id/cliente",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vendas",
+														":id",
+														"cliente"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"nome\": \"quis nulla dolore non\",\n  \"email\": \"laborum dolor\",\n  \"NIF\": \"laboris sunt exercitation\",\n  \"morada\": \"sed anim adipisicing dolore\",\n  \"id\": -40421495.29197059\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "utilizador",
+							"item": [
+								{
+									"name": "Venda Utilizador Controller.get Utilizador",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/vendas/:id/utilizador",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vendas",
+												":id",
+												"utilizador"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-22587303.153514028",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Utilizador belonging to Venda",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/vendas/:id/utilizador",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vendas",
+														":id",
+														"utilizador"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"nome\": \"sunt eiusmod aliquip Excepteur ipsum\",\n  \"username\": \"qui ipsum Duis\",\n  \"tipo_perfil\": \"dolore ipsum\",\n  \"id\": -96925919.86035453\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Venda Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"data\": \"anim culpa voluptate\",\n  \"valor\": -64873631.56500163,\n  \"metodo_pagamento\": \"fugiat mini\",\n  \"id\": -22058024.771940544,\n  \"clienteId\": -38798189.56298173,\n  \"utilizadorId\": 12644108.466485053\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/vendas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vendas",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"data\": \"anim culpa voluptate\",\n  \"valor\": -64873631.56500163,\n  \"metodo_pagamento\": \"fugiat mini\",\n  \"id\": -22058024.771940544,\n  \"clienteId\": -38798189.56298173,\n  \"utilizadorId\": 12644108.466485053\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/vendas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vendas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Venda PUT success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Venda Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -99619349.10529666,\n  \"data\": \"consequat deserunt nulla velit sint\",\n  \"valor\": 5320009.474314973,\n  \"metodo_pagamento\": \"culpa sit officia\",\n  \"clienteId\": 45208884.90877369,\n  \"utilizadorId\": 58931662.93268582\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/vendas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vendas",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -99619349.10529666,\n  \"data\": \"consequat deserunt nulla velit sint\",\n  \"valor\": 5320009.474314973,\n  \"metodo_pagamento\": \"culpa sit officia\",\n  \"clienteId\": 45208884.90877369,\n  \"utilizadorId\": 58931662.93268582\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/vendas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vendas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Venda PATCH success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Venda Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/vendas/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vendas",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Venda model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/vendas/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vendas",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"data\": \"non minim\",\n  \"valor\": 94828484.95110506,\n  \"metodo_pagamento\": \"in fugiat commodo laborum\",\n  \"id\": -41358423.97758451,\n  \"clienteId\": 40801302.419573426,\n  \"utilizadorId\": 71858003.57774574,\n  \"cliente\": {\n    \"nome\": \"cillum et sint amet\",\n    \"email\": \"sint in\",\n    \"NIF\": \"pariatur dolor\",\n    \"morada\": \"cupidatat sint sit\",\n    \"id\": 67570874.96914345\n  },\n  \"foreignKey\": {},\n  \"utilizador\": {\n    \"nome\": \"ea velit\",\n    \"username\": \"ipsum \",\n    \"tipo_perfil\": \"enim esse sit tempor officia\",\n    \"id\": 85430463.44012803\n  }\n}"
+								}
+							]
+						},
+						{
+							"name": "Venda Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/vendas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vendas",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/vendas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vendas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Venda DELETE success\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Venda Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": \"laborum aliquip dolor ipsum a\",\n  \"valor\": 29446126.861954138,\n  \"metodo_pagamento\": \"proident nostrud ullamco\",\n  \"clienteId\": -22211206.6973764,\n  \"utilizadorId\": -17902340.62407276\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/vendas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vendas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Venda model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"data\": \"laborum aliquip dolor ipsum a\",\n  \"valor\": 29446126.861954138,\n  \"metodo_pagamento\": \"proident nostrud ullamco\",\n  \"clienteId\": -22211206.6973764,\n  \"utilizadorId\": -17902340.62407276\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/vendas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vendas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"data\": \"anim culpa voluptate\",\n  \"valor\": -64873631.56500163,\n  \"metodo_pagamento\": \"fugiat mini\",\n  \"id\": -22058024.771940544,\n  \"clienteId\": -38798189.56298173,\n  \"utilizadorId\": 12644108.466485053\n}"
+						}
+					]
+				},
+				{
+					"name": "Venda Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/vendas?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vendas"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Venda model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/vendas?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vendas"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"data\": \"anim\",\n    \"valor\": 3833642.154693529,\n    \"metodo_pagamento\": \"occae\",\n    \"id\": -43703880.08109867,\n    \"clienteId\": 30537719.57806708,\n    \"utilizadorId\": 18632443.521884218,\n    \"cliente\": {\n      \"nome\": \"esse fugiat\",\n      \"email\": \"magna in ad qui\",\n      \"NIF\": \"ut reprehenderit aliquip elit\",\n      \"morada\": \"dolor voluptate id\",\n      \"id\": -56949602.21499232\n    },\n    \"foreignKey\": {},\n    \"utilizador\": {\n      \"nome\": \"id exercitation\",\n      \"username\": \"incididunt sint voluptate\",\n      \"tipo_perfil\": \"dolore proident in\",\n      \"id\": -79011305.86137843\n    }\n  },\n  {\n    \"data\": \"laboris velit dolor\",\n    \"valor\": 21703685.433857962,\n    \"metodo_pagamento\": \"mollit in ullamco dolore sint\",\n    \"id\": 46278719.49354789,\n    \"clienteId\": -34356426.38350265,\n    \"utilizadorId\": -21236900.463350803,\n    \"cliente\": {\n      \"nome\": \"magna consectetur dolor\",\n      \"email\": \"in\",\n      \"NIF\": \"dolore elit\",\n      \"morada\": \"laborum magna sunt\",\n      \"id\": 61542703.29100707\n    },\n    \"foreignKey\": {},\n    \"utilizador\": {\n      \"nome\": \"dolor\",\n      \"username\": \"aliqua pariatur\",\n      \"tipo_perfil\": \"ex enim laborum\",\n      \"id\": -7785279.995324463\n    }\n  }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "stocks",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "utilizador",
+							"item": [
+								{
+									"name": "Stock Utilizador Controller.get Utilizador",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/stocks/:id/utilizador",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stocks",
+												":id",
+												"utilizador"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-22587303.153514028",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Utilizador belonging to Stock",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/stocks/:id/utilizador",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"stocks",
+														":id",
+														"utilizador"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"nome\": \"sunt eiusmod aliquip Excepteur ipsum\",\n  \"username\": \"qui ipsum Duis\",\n  \"tipo_perfil\": \"dolore ipsum\",\n  \"id\": -96925919.86035453\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Stock Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"modelo\": \"in amet\",\n  \"quantidade\": -78847377.56543022,\n  \"id\": 27588075.47689286,\n  \"utilizadorId\": 68520015.49280718\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/stocks/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"modelo\": \"in amet\",\n  \"quantidade\": -78847377.56543022,\n  \"id\": 27588075.47689286,\n  \"utilizadorId\": 68520015.49280718\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/stocks/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stocks",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Stock PUT success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Stock Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -72035281.26344998,\n  \"modelo\": \"deserunt\",\n  \"quantidade\": -16385685.181885406,\n  \"utilizadorId\": 76177813.42799702\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/stocks/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -72035281.26344998,\n  \"modelo\": \"deserunt\",\n  \"quantidade\": -16385685.181885406,\n  \"utilizadorId\": 76177813.42799702\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/stocks/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stocks",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Stock PATCH success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Stock Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/stocks/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Stock model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/stocks/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stocks",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"modelo\": \"fugiat\",\n  \"quantidade\": 69762166.59543651,\n  \"id\": 84427405.12948665,\n  \"utilizadorId\": -82342932.83464539,\n  \"utilizador\": {\n    \"nome\": \"anim quis d\",\n    \"username\": \"officia ex\",\n    \"tipo_perfil\": \"est\",\n    \"id\": -6483713.838090301\n  },\n  \"foreignKey\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "Stock Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/stocks/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/stocks/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stocks",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Stock DELETE success\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Stock Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"modelo\": \"ea culpa ad occaecat\",\n  \"quantidade\": -69368900.27433762,\n  \"utilizadorId\": 52560236.583432645\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/stocks",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"stocks"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Stock model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"modelo\": \"ea culpa ad occaecat\",\n  \"quantidade\": -69368900.27433762,\n  \"utilizadorId\": 52560236.583432645\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/stocks",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"modelo\": \"in amet\",\n  \"quantidade\": -78847377.56543022,\n  \"id\": 27588075.47689286,\n  \"utilizadorId\": 68520015.49280718\n}"
+						}
+					]
+				},
+				{
+					"name": "Stock Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/stocks?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"stocks"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Stock model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/stocks?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"modelo\": \"do\",\n    \"quantidade\": -58470879.57124444,\n    \"id\": 81411542.37133121,\n    \"utilizadorId\": -16754564.026821941,\n    \"utilizador\": {\n      \"nome\": \"officia deserunt incididunt ut\",\n      \"username\": \"dolore\",\n      \"tipo_perfil\": \"pariatur ut in\",\n      \"id\": 83928619.77608773\n    },\n    \"foreignKey\": {}\n  },\n  {\n    \"modelo\": \"Ut nostrud id irure esse\",\n    \"quantidade\": -88209803.03555346,\n    \"id\": -7286832.762713358,\n    \"utilizadorId\": 42398253.60622889,\n    \"utilizador\": {\n      \"nome\": \"ut\",\n      \"username\": \"mollit commodo elit ullamco\",\n      \"tipo_perfil\": \"dolor consequat et\",\n      \"id\": 32775732.51941748\n    },\n    \"foreignKey\": {}\n  }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "utilizadors",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Utilizador Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nome\": \"sunt eiusmod aliquip Excepteur ipsum\",\n  \"username\": \"qui ipsum Duis\",\n  \"tipo_perfil\": \"dolore ipsum\",\n  \"id\": -96925919.86035453\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/utilizadors/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadors",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nome\": \"sunt eiusmod aliquip Excepteur ipsum\",\n  \"username\": \"qui ipsum Duis\",\n  \"tipo_perfil\": \"dolore ipsum\",\n  \"id\": -96925919.86035453\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/utilizadors/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadors",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Utilizador PUT success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Utilizador Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -41178278.2421894,\n  \"nome\": \"ullamco\",\n  \"username\": \"incididunt labore nulla\",\n  \"tipo_perfil\": \"elit sint cillum laboris\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/utilizadors/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadors",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -41178278.2421894,\n  \"nome\": \"ullamco\",\n  \"username\": \"incididunt labore nulla\",\n  \"tipo_perfil\": \"elit sint cillum laboris\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/utilizadors/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadors",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Utilizador PATCH success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Utilizador Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/utilizadors/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadors",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Utilizador model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/utilizadors/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadors",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"nome\": \"est\",\n  \"username\": \"id culpa occaecat\",\n  \"tipo_perfil\": \"culpa\",\n  \"id\": -40142264.93002586\n}"
+								}
+							]
+						},
+						{
+							"name": "Utilizador Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/utilizadors/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadors",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-22587303.153514028",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/utilizadors/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"utilizadors",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"description\": \"Utilizador DELETE success\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Utilizador Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nome\": \"ullamco\",\n  \"username\": \"pariatur cupidatat deserunt nulla\",\n  \"tipo_perfil\": \"sint eu Ut\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/utilizadors",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"utilizadors"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Utilizador model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nome\": \"ullamco\",\n  \"username\": \"pariatur cupidatat deserunt nulla\",\n  \"tipo_perfil\": \"sint eu Ut\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/utilizadors",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadors"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"nome\": \"sunt eiusmod aliquip Excepteur ipsum\",\n  \"username\": \"qui ipsum Duis\",\n  \"tipo_perfil\": \"dolore ipsum\",\n  \"id\": -96925919.86035453\n}"
+						}
+					]
+				},
+				{
+					"name": "Utilizador Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/utilizadors?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"utilizadors"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Utilizador model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/utilizadors?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"utilizadors"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"nome\": \"consectetur\",\n    \"username\": \"reprehenderit tempor consequat mollit exercitation\",\n    \"tipo_perfil\": \"labore laborum enim\",\n    \"id\": 988017.7496951222\n  },\n  {\n    \"nome\": \"voluptate Lorem minim Ut officia\",\n    \"username\": \"deserunt nisi irure\",\n    \"tipo_perfil\": \"Duis qui ut incididunt\",\n    \"id\": -27378614.476362005\n  }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://127.0.0.1:3000"
+		}
+	]
+}
