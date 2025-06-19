@@ -1,0 +1,20 @@
+# C6 : API
+
+---
+
+## Escolhas de Implementação
+
+- Datas e horas definidas como `string` com a finalidade de evitar problemas de compatibilidade **baseado em indicação direta do professor**.
+
+- `@belongsTo` e `@hasOne` usados para modelar relações foco em manter estrutura coerente e simples para testes e manutenção.
+
+## SQL Migrate
+
+| original | migratet |
+|-------|-------|
+| <img src="../img/sql_print.png" alt="" width="550" /> | <img src="../img/migrate_print.png" alt="" width="550" /> |
+
+---
+
+| [< Previous](rpf05.md) | [^ InÃcio](rpf00.md) | [Next >](rpf07.md) |
+| :---------------------- | :-------------------: | ------------------: |
